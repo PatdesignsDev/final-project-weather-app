@@ -108,7 +108,7 @@ main {
   color: #f65282;
   margin-top: 10px;
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
 }
 
 .weather-forecast-temperature {
