@@ -1,5 +1,9 @@
 body {
-  background-color: #fff5fd;
+  background-color: radial-gradient(
+    circle at 18.7% 37.8%,
+    rgb(250, 250, 250) 0%,
+    rgb(225, 234, 238) 90%
+  );
   font-family: "Roboto", sans-serif;
 }
 
@@ -22,7 +26,7 @@ header {
 }
 
 .search-form-input {
-  background-color: #fff5fd;
+  background-color: #efefef;
   border: none;
   border-radius: 6px;
   width: 80%;
@@ -84,6 +88,31 @@ main {
 .weatehr-app-unit {
   margin-top: 6px;
   font-size: 28px;
+}
+
+.weather-forecast-date {
+  text-align: center;
+  color: rgba(39, 33, 66, 0.4);
+  font-size: 16px;
+  line-height: 20px;
+  margin-bottom: 10px;
+}
+
+.weather-forecast-icon {
+  font-size: 28px;
+  margin-top: 6px;
+}
+
+.weather-forecast-temperatures {
+  text-align: center;
+  color: #f65282;
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.weather-forecast-temperature {
+  padding: 0 10px;
 }
 
 footer {
