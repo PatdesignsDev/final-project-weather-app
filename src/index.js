@@ -41,7 +41,7 @@ function formatDate(date) {
 
 function searchCity(city) {
   let apikey = "5c9fa8tb15a0808c494ddd28db3adc8o";
-  let apiurl = `https://api.shecodes.io/weather/v1/current?query=${city}&key=${apikey}&units=metric`;
+  let apiUrl = `https://api.shecodes.io/weather/v1/current?query=${city}&key=${apikey}&units=metric`;
   axios.get(apiUrl).then(refreshWeather);
 }
 
@@ -56,12 +56,12 @@ function formatDay(timestamp) {
   let date = new Date(timestamp * 1000);
   let days = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
 
-  returndays[date.getDay()];
+  return days[date.getDay()];
 }
 
 function getForecast(city) {
   let apikey = "5c9fa8tb15a0808c494ddd28db3adc8o";
-  let apiurl = `https://api.shecodes.io/weather/v1/current?query=${city}&key=${apikey}&units=metric`;
+  let apiUrl = `https://api.shecodes.io/weather/v1/forecast?query=${city}&key=${apikey}&units=metric`;
   axios.get(apiUrl).then(displayForecast);
 }
 
@@ -75,15 +75,16 @@ function displayForecast(response) {
         `
       <div class="weather-forecast-day">
         <div class="weather-forecast-date">${formatDay(day.time)}</div>
-        <div class="weather-forecast-icon">
-        <img src="${day.condition.icon_url}"/>
-        </div>
+
+        <img src="${day.condition.icon_url}" class="weather-forecast-icon"/>
+       
         <div class="weather-forecast-temperatures">
           <div class="weather-forecast-temperature">
-            <strong>${Math.round(day.temperature.maximum)}</strong>
+            <strong>${Math.round(day.temperature.maximum)}º</strong>
           </div>
-          <div class="weather-forecast-temperature">${Math.round(day.temperature.minimum)}
-          </div>
+          <div class="weather-forecast-temperature">${Math.round(
+            day.temperature.minimum,
+          )}º </div>
         </div>
       </div>
     `;
@@ -98,4 +99,3 @@ let searchFormElement = document.querySelector("#search-form");
 searchFormElement.addEventListener("submit", handleSearchSubmit);
 
 searchCity("Paris");
-displayForecast();
