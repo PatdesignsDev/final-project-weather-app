@@ -38,15 +38,22 @@ header {
   padding: 15px 20px;
 }
 
-.search-form-button {
-  background: #bf00ff;
-  padding: 15px 20px;
-  border: none;
-  font-size: 16px;
-  margin-left: 5px;
-  border-radius: 6px;
-  color: white;
-  white-space: nowrap;
+@media (max-width: 480px) {
+  .search-form-input {
+    padding: 12px 10px;
+    font-size: 14px;
+  }
+
+  .search-form-button {
+    background: #bf00ff;
+    padding: 12px 14px;
+    border: none;
+    font-size: 16px;
+    margin-left: 5px;
+    border-radius: 6px;
+    color: white;
+    white-space: nowrap;
+  }
 }
 
 main {
