@@ -10,16 +10,16 @@ a {
   color: #bf00ff;
 }
 
-@media (min-width: 481px) {
+@media (min-width: 480px) {
   .weather-app {
-    margin: 40px auto;
+    margin: 10px;
   }
 }
 
 .weather-app {
   background: white;
-  max-width: 600px;
-   margin: 10px;
+  max-width: 37.5em;
+  margin: 40px auto;
   box-shadow: 0 30px 50px rgba(65, 50, 100, 0.08);
   border-radius: 16px;
   padding: 30px;
@@ -34,7 +34,7 @@ header {
 .search-form {
   display: flex;
   align-items: center;
-  width: 100%; 
+  width: 100%;
 }
 
 .search-form-input {
