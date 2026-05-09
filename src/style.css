@@ -2,10 +2,10 @@ body {
   background: radial-gradient(
     circle at 10% 20%,
     rgb(255, 246, 236) 39.5%,
-    rgba(100, 46, 122, 0.23) 100.2% );
+    rgba(100, 46, 122, 0.23) 100.2%
+  );
   font-family: "Roboto", sans-serif;
-  background: no-repeat;
-  background-size: cover;
+  min-height: 100vh;
 }
 
 a {
@@ -36,9 +36,11 @@ header {
 }
 
 .search-form-button {
-  background: linear-gradient( 76.8deg,
+  background: linear-gradient(
+    76.8deg,
     rgb(121, 45, 129) 3.6%,
-    rgb(36, 31, 98) 90.4% );
+    rgb(36, 31, 98) 90.4%
+  );
   padding: 15px 30px;
   border: none;
   font-size: 16px;
@@ -79,7 +81,7 @@ main {
 
 .weather-app-icon {
   width: 88px;
-  height: 8px;
+  height: 88px;
   display: block;
   margin: 0 auto;
 }
