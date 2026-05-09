@@ -34,11 +34,7 @@ header {
 }
 
 .search-form-button {
-  background: linear-gradient(
-    76.8deg,
-    rgb(121, 45, 129) 3.6%,
-    rgb(36, 31, 98) 90.4%
-  );
+  background: #bf00ff ;
   padding: 15px 30px;
   border: none;
   font-size: 16px;
@@ -99,7 +95,19 @@ main {
   display: flex;
   justify-content: space-around;
   margin-top: 30px;
+   flex-wrap: wrap;
+   gap: 10px;
+   
 }
+
+.weather-forecast-day{
+min-width: 55px; 
+flex: 1; 
+
+}
+
+
+
 
 .weather-forecast-date {
   text-align: center;
