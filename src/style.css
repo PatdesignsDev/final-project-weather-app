@@ -88,27 +88,6 @@ main {
   justify-content: space-between;
 }
 
-@media (max-width: 480px) {
-  .weather-app-city {
-    font-size: 24px;
-    line-height: 32px;
-  }
-
-  .weather-app-temperature {
-    font-size: 60px;
-    line-height: 60px;
-  }
-
-  .weather-app-icon {
-    width: 60px;
-    height: 60px;
-  }
-
-  .weatehr-app-unit {
-    font-size: 20px;
-  }
-}
-
 .weather-app-city {
   margin: 0;
   font-size: 38px;
